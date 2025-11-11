@@ -1,3 +1,5 @@
+#![windows_subsystem = "windows"]
+
 use std::{process::Command, thread, time::Duration};
 
 use crate::{game::is_game_running, launcher::ensure_launcher};
@@ -18,12 +20,17 @@ fn main() {
         if szimat.is_err() {
             panic!("{}", szimat.unwrap_err());
         }
+        let mut i = 0;
         loop {
+            if i > 5 {
+                break;
+            }
             thread::sleep(Duration::from_secs(5));
             if is_game_running() {
                 break;
             }
-            println!("[LAUNCHER] Játék még mindig nem fut...")
+            println!("[LAUNCHER] Játék még mindig nem fut...");
+            i += 1;
         }
     }
     loop {
