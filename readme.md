@@ -12,7 +12,7 @@ Mivel alapesetben a Steam nem érzékeli a SeeMTA-t, így egyedi parancsként r�
 ## Hogyan lehet használni?
 Igazából baromi egyszerű:
 1. [Innen](https://github.com/HVCsano/SzimatLauncher/releases/latest) szedd le az exe-t.
-2. Másold be egy neked tetszó mappába.
+2. Másold be egy neked tetsző mappába.
 3. Nyisd meg a Steamen a játék oldalát, majd "Tulajdonságok..." --> Általános --> Indítási opciók
 4. Illeszd be oda ezt (idézőjellel együtt): `"exe_elérési_útja.exe" %command%`
 
