@@ -1,3 +1,5 @@
+![logo](https://i.ibb.co/S4cc91X9/szimat-logo.png)
+
 # SzimatLauncher
 
 ## Mi ez?
